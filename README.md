@@ -1,3 +1,26 @@
+# Sales Forecasting with XGBoost
+
+This project predicts **weekly sales** for retail stores using historical sales, store details, and additional features. It leverages **XGBoost Regression** for accurate time series forecasting with lag features, time-based variables, and store-specific data.
+
+## Requirements
+- Python 3.x
+- pandas
+- numpy
+- matplotlib
+- seaborn
+- scikit-learn
+- xgboost
+
+Install dependencies with:
+pip install pandas numpy matplotlib seaborn scikit-learn xgboost
+
+## Dataset
+The project uses three CSV files:
+- **train.csv**: Historical weekly sales per store and department.
+- **stores.csv**: Store-level metadata (e.g., type, size).
+- **features.csv**: Additional information such as holidays, temperature, fuel price, CPI, and unemployment.
+
+Make sure the file paths in the script are updated to your dataset location:
 
 ## Workflow
 1. **Data Merging**: Combines training, store, and feature datasets.
